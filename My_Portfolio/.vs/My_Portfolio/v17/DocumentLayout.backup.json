@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "E:\\Coding\\New folder\\My_Portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -38,8 +38,7 @@
               "RelativeToolTip": "My_Portfolio\\css\\style.css",
               "ViewState": "AgIAAOABAAAAAAAAAADwv/EBAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-29T10:02:07.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T10:02:07.707Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "My_Portfolio\\js\\main.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-29T11:00:10.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T11:00:10.442Z"
             }
           ]
         }
