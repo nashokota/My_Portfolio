@@ -79,16 +79,18 @@
         </section>
 
 
-        <!-- ✅ PROJECTS SECTION -->
+      <!-- PROJECTS SECTION -->
         <section class="projects" id="projects">
-            <h2 class="heading">My <span>Projects</span></h2>
+            <h2 class="heading">My <span>Projects</span></h2><br />
             <div class="projects-container">
                 <asp:Repeater ID="rptProjects" runat="server">
                     <ItemTemplate>
                         <div class="project-card">
                             <h3 class="project-title"><%# Eval("Title") %></h3>
                             <p class="project-desc"><%# Eval("Description") %></p>
-                            <a href='<%# Eval("SourceCode") %>' target="_blank">Source Code</a>
+                            <div class="project-links">
+                                <a href='<%# Eval("SourceCode") %>' target="_blank">Source Code</a>
+                            </div>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>
