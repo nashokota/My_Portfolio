@@ -88,10 +88,7 @@
                         <div class="project-card">
                             <h3 class="project-title"><%# Eval("Title") %></h3>
                             <p class="project-desc"><%# Eval("Description") %></p>
-                            <div class="project-links">
-                                <a href='<%# Eval("LiveDemo") %>' target="_blank">Live Demo</a>
-                                <a href='<%# Eval("SourceCode") %>' target="_blank">Source Code</a>
-                            </div>
+                            <a href='<%# Eval("SourceCode") %>' target="_blank">Source Code</a>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>

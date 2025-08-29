@@ -19,7 +19,6 @@ namespace My_Portfolio
         {
             string title = txtTitle.Text.Trim();
             string description = txtDescription.Text.Trim();
-            string liveDemo = txtLiveDemo.Text.Trim();
             string sourceCode = txtSourceCode.Text.Trim();
 
             using (MySqlConnection conn = new MySqlConnection(connStr))
@@ -29,7 +28,6 @@ namespace My_Portfolio
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Title", title);
                 cmd.Parameters.AddWithValue("@Description", description);
-                cmd.Parameters.AddWithValue("@LiveDemo", liveDemo);
                 cmd.Parameters.AddWithValue("@SourceCode", sourceCode);
 
                 conn.Open();

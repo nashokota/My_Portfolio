@@ -42,15 +42,6 @@ namespace My_Portfolio
         protected global::System.Web.UI.WebControls.TextBox txtDescription;
 
         /// <summary>
-        /// txtLiveDemo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLiveDemo;
-
-        /// <summary>
         /// txtSourceCode control.
         /// </summary>
         /// <remarks>

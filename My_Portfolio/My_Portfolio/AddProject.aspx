@@ -19,10 +19,6 @@
             <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" Rows="5"></asp:TextBox>
         </div>
         <div>
-            <label>Live Demo URL:</label>
-            <asp:TextBox ID="txtLiveDemo" runat="server"></asp:TextBox>
-        </div>
-        <div>
             <label>Source Code URL:</label>
             <asp:TextBox ID="txtSourceCode" runat="server"></asp:TextBox>
         </div>

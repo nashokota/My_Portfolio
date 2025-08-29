@@ -26,7 +26,6 @@
             <Columns>
                 <asp:BoundField DataField="Title" HeaderText="Title" />
                 <asp:BoundField DataField="Description" HeaderText="Description" />
-                <asp:BoundField DataField="LiveDemo" HeaderText="Live Demo URL" />
                 <asp:BoundField DataField="SourceCode" HeaderText="Source Code URL" />
                 <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
             </Columns>

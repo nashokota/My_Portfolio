@@ -106,8 +106,7 @@ namespace My_Portfolio
 
             string title = ((System.Web.UI.WebControls.TextBox)row.Cells[0].Controls[0]).Text;
             string description = ((System.Web.UI.WebControls.TextBox)row.Cells[1].Controls[0]).Text;
-            string liveDemo = ((System.Web.UI.WebControls.TextBox)row.Cells[2].Controls[0]).Text;
-            string sourceCode = ((System.Web.UI.WebControls.TextBox)row.Cells[3].Controls[0]).Text;
+            string sourceCode = ((System.Web.UI.WebControls.TextBox)row.Cells[2].Controls[0]).Text;
 
             using (MySqlConnection conn = new MySqlConnection(connStr))
             {
@@ -115,7 +114,6 @@ namespace My_Portfolio
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Title", title);
                 cmd.Parameters.AddWithValue("@Description", description);
-                cmd.Parameters.AddWithValue("@LiveDemo", liveDemo);
                 cmd.Parameters.AddWithValue("@SourceCode", sourceCode);
                 cmd.Parameters.AddWithValue("@ProjectID", projectId);
 
