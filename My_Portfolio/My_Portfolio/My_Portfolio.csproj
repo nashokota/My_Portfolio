@@ -189,6 +189,7 @@
     <Content Include="image\3.jpeg" />
     <Content Include="image\aboutsection.jpeg" />
     <Content Include="image\Al_Mubtasim_Preom-removebg-preview.png" />
+    <Content Include="js\contact.js" />
     <Content Include="js\main.js" />
     <Content Include="js\script.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />

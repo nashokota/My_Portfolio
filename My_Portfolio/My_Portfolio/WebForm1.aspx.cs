@@ -90,13 +90,46 @@ namespace My_Portfolio
         // Contact form submit
         protected void btnSend_Click(object sender, EventArgs e)
         {
-            string name = txtName.Text;
-            string email = txtEmail.Text;
-            string subject = txtSubject.Text;
-            string message = txtMessage.Text;
+            string name = txtName.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string phone = txtPhone.Text.Trim();
+            string subject = txtSubject.Text.Trim();
+            string message = txtMessage.Text.Trim();
 
-            // TODO: Save to DB or send email
+            // Check if any field is empty
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(email) ||
+                string.IsNullOrEmpty(phone) || string.IsNullOrEmpty(subject) ||
+                string.IsNullOrEmpty(message))
+            {
+                Response.Write("<script>alert('Please fill in all the fields before submitting.');</script>");
+                return; // Stop execution if validation fails
+            }
+
+            string connStr = System.Configuration.ConfigurationManager
+                             .ConnectionStrings["PortfolioDB"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                string query = "INSERT INTO ContactMessages (Name, Email, Phone, Subject, Message) " +
+                               "VALUES (@Name, @Email, @Phone, @Subject, @Message)";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Name", name);
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@Phone", phone);
+                    cmd.Parameters.AddWithValue("@Subject", subject);
+                    cmd.Parameters.AddWithValue("@Message", message);
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+            }
+
             Response.Write($"<script>alert('Thank you {name}, your message has been sent.');</script>");
+
+            // Clear the form
+            txtName.Text = txtEmail.Text = txtPhone.Text = txtSubject.Text = txtMessage.Text = "";
         }
 
         // Service read more

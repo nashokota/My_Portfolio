@@ -122,21 +122,34 @@
 
         <!-- ✅ CONTACT FORM -->
         <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
-            <div class="input-box">
-                <asp:TextBox ID="txtName" runat="server" CssClass="input" Placeholder="Full Name"></asp:TextBox>
-                <asp:TextBox ID="txtEmail" runat="server" CssClass="input" TextMode="Email" Placeholder="Your Email"></asp:TextBox>
-            </div>
+    <h2 class="heading">Contact <span>Me</span></h2>
 
-            <div class="input-box">
-                <asp:TextBox ID="txtPhone" runat="server" CssClass="input" Placeholder="Phone Number"></asp:TextBox>
-                <asp:TextBox ID="txtSubject" runat="server" CssClass="input" Placeholder="Subject"></asp:TextBox>
-            </div>
+    <div class="input-box">
+        <asp:TextBox ID="txtName" runat="server" CssClass="input" Placeholder="Full Name"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName"
+            ErrorMessage="* Name is required" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
 
-            <asp:TextBox ID="txtMessage" runat="server" CssClass="textarea" TextMode="MultiLine" Rows="6" Columns="30" Placeholder="Your Message"></asp:TextBox>
+        <asp:TextBox ID="txtEmail" runat="server" CssClass="input" TextMode="Email" Placeholder="Your Email"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail"
+            ErrorMessage="* Email is required" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+    </div>
 
-            <asp:Button ID="btnSend" runat="server" Text="Send Message" CssClass="btn" OnClick="btnSend_Click" />
-        </section>
+    <div class="input-box">
+        <asp:TextBox ID="txtPhone" runat="server" CssClass="input" Placeholder="Phone Number"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfvPhone" runat="server" ControlToValidate="txtPhone"
+            ErrorMessage="* Phone is required" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+
+        <asp:TextBox ID="txtSubject" runat="server" CssClass="input" Placeholder="Subject"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfvSubject" runat="server" ControlToValidate="txtSubject"
+            ErrorMessage="* Subject is required" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+    </div>
+
+    <asp:TextBox ID="txtMessage" runat="server" CssClass="textarea" TextMode="MultiLine" Rows="6" Columns="30" Placeholder="Your Message"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="rfvMessage" runat="server" ControlToValidate="txtMessage"
+        ErrorMessage="* Message is required" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+
+    <asp:Button ID="btnSend" runat="server" Text="Send Message" CssClass="btn" OnClick="btnSend_Click" />
+</section>
 
 
         <!-- ✅ FOOTER -->
@@ -157,6 +170,7 @@
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="js/main.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/contact.js"></script>
         </form>
 </body>
 </html>
