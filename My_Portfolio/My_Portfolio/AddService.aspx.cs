@@ -21,23 +21,36 @@ namespace My_Portfolio
             string description = txtDescription.Text.Trim();
             string iconClass = txtIconClass.Text.Trim();
 
-            using (SqlConnection conn = new SqlConnection(connStr))
+            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(description) || string.IsNullOrEmpty(iconClass))
             {
-                string query = "INSERT INTO Services (Title, Description, IconClass) " +
-                               "VALUES (@Title, @Description, @IconClass)";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Title", title);
-                    cmd.Parameters.AddWithValue("@Description", description);
-                    cmd.Parameters.AddWithValue("@IconClass", iconClass);
-
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-                }
+                Response.Write("<script>alert('All fields are required.');</script>");
+                return;
             }
 
-            Response.Write("<script>alert('Service added successfully!');window.location='Admin.aspx';</script>");
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connStr))
+                {
+                    string query = "INSERT INTO Services (Title, Description, IconClass) " +
+                                   "VALUES (@Title, @Description, @IconClass)";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Title", title);
+                        cmd.Parameters.AddWithValue("@Description", description);
+                        cmd.Parameters.AddWithValue("@IconClass", iconClass);
+
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+                Response.Write("<script>alert('Service added successfully!'); window.location='Admin.aspx';</script>");
+            }
+            catch (Exception ex)
+            {
+                Response.Write($"<script>alert('Error: {ex.Message}');</script>");
+            }
         }
 
         protected void btnBack_Click(object sender, EventArgs e)

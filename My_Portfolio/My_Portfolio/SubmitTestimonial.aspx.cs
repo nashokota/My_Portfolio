@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 
@@ -7,7 +6,6 @@ namespace My_Portfolio
 {
     public partial class SubmitTestimonial : System.Web.UI.Page
     {
-        // SQL Server connection string from Web.config
         private string connStr = System.Configuration.ConfigurationManager
                           .ConnectionStrings["PortfolioDB"].ConnectionString;
 
@@ -17,36 +15,48 @@ namespace My_Portfolio
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            string name = txtName.Text;
-            string feedback = txtFeedback.Text;
-            string stars = ddlStars.SelectedItem.Value;
-            string photoPath = "";
+            string name = txtName.Text.Trim();
+            string feedback = txtFeedback.Text.Trim();
+            int stars = Convert.ToInt32(ddlStars.SelectedValue);
+            string photoPath = null;
 
             // Handle file upload
             if (fuPhoto.HasFile)
             {
+                string folder = Server.MapPath("~/image/testimonials/");
+                if (!Directory.Exists(folder))
+                    Directory.CreateDirectory(folder);
+
                 string fileName = Path.GetFileName(fuPhoto.FileName);
-                photoPath = "images/testimonials/" + fileName; // save path in DB
-                fuPhoto.SaveAs(Server.MapPath("~/image/testimonials/" + fileName));
+                photoPath = "image/testimonials/" + fileName; // path to store in DB
+                fuPhoto.SaveAs(Path.Combine(folder, fileName));
             }
 
-            using (SqlConnection conn = new SqlConnection(connStr))
+            try
             {
-                string query = "INSERT INTO Testimonials (Name, Feedback, Stars, ImageUrl) VALUES (@Name, @Feedback, @Stars, @ImageUrl)";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlConnection conn = new SqlConnection(connStr))
                 {
-                    cmd.Parameters.AddWithValue("@Name", name);
-                    cmd.Parameters.AddWithValue("@Feedback", feedback);
-                    cmd.Parameters.AddWithValue("@Stars", stars);
-                    cmd.Parameters.AddWithValue("@ImageUrl", photoPath);
+                    string query = "INSERT INTO Testimonials (Name, Feedback, Stars, ImageUrl) " +
+                                   "VALUES (@Name, @Feedback, @Stars, @ImageUrl)";
 
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", name);
+                        cmd.Parameters.AddWithValue("@Feedback", feedback);
+                        cmd.Parameters.AddWithValue("@Stars", stars);
+                        cmd.Parameters.AddWithValue("@ImageUrl", (object)photoPath ?? DBNull.Value);
+
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                    }
                 }
-            }
 
-            Response.Write("<script>alert('Thank you! Your testimonial has been submitted.'); window.location='WebForm1.aspx';</script>");
+                Response.Write("<script>alert('Thank you! Your testimonial has been submitted.'); window.location='WebForm1.aspx';</script>");
+            }
+            catch (Exception ex)
+            {
+                Response.Write($"<script>alert('Error: {ex.Message}');</script>");
+            }
         }
     }
 }

@@ -21,23 +21,36 @@ namespace My_Portfolio
             string description = txtDescription.Text.Trim();
             string sourceCode = txtSourceCode.Text.Trim();
 
-            using (SqlConnection conn = new SqlConnection(connStr))
+            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(description))
             {
-                string query = "INSERT INTO Projects (Title, Description, SourceCode) " +
-                               "VALUES (@Title, @Description, @SourceCode)";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Title", title);
-                    cmd.Parameters.AddWithValue("@Description", description);
-                    cmd.Parameters.AddWithValue("@SourceCode", sourceCode);
-
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-                }
+                Response.Write("<script>alert('Title and Description cannot be empty.');</script>");
+                return;
             }
 
-            Response.Write("<script>alert('Project added successfully!');window.location='Admin.aspx';</script>");
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connStr))
+                {
+                    string query = "INSERT INTO Projects (Title, Description, SourceCode) " +
+                                   "VALUES (@Title, @Description, @SourceCode)";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Title", title);
+                        cmd.Parameters.AddWithValue("@Description", description);
+                        cmd.Parameters.AddWithValue("@SourceCode", sourceCode);
+
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+                Response.Write("<script>alert('Project added successfully!'); window.location='Admin.aspx';</script>");
+            }
+            catch (Exception ex)
+            {
+                Response.Write($"<script>alert('Error: {ex.Message}');</script>");
+            }
         }
 
         protected void btnBack_Click(object sender, EventArgs e)

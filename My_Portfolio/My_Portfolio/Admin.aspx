@@ -37,10 +37,10 @@
         <!-- SERVICES SECTION -->
         <h2>Services</h2>
         <asp:GridView ID="gvServices" runat="server" AutoGenerateColumns="False" DataKeyNames="ServiceID"
-            OnRowEditing="gvProjects_RowEditing"
-            OnRowCancelingEdit="gvProjects_RowCancelingEdit"
-            OnRowUpdating="gvProjects_RowUpdating"
-            OnRowDeleting="gvProjects_RowDeleting">
+            OnRowEditing="gvServices_RowEditing"
+            OnRowCancelingEdit="gvServices_RowCancelingEdit"
+            OnRowUpdating="gvServices_RowUpdating"
+            OnRowDeleting="gvServices_RowDeleting">
             <Columns>
                 <asp:BoundField DataField="Title" HeaderText="Title" />
                 <asp:BoundField DataField="Description" HeaderText="Description" />
@@ -55,10 +55,10 @@
         <!-- TESTIMONIALS SECTION -->
         <h2>Testimonials</h2>
         <asp:GridView ID="gvTestimonials" runat="server" AutoGenerateColumns="False" DataKeyNames="TestimonialID"
-            OnRowEditing="gvProjects_RowEditing"
-            OnRowCancelingEdit="gvProjects_RowCancelingEdit"
-            OnRowUpdating="gvProjects_RowUpdating"
-            OnRowDeleting="gvProjects_RowDeleting">
+            OnRowEditing="gvTestimonials_RowEditing"
+            OnRowCancelingEdit="gvTestimonials_RowCancelingEdit"
+            OnRowUpdating="gvTestimonials_RowUpdating"
+            OnRowDeleting="gvTestimonials_RowDeleting">
             <Columns>
                 <asp:BoundField DataField="Name" HeaderText="Name" />
                 <asp:BoundField DataField="Feedback" HeaderText="Feedback" />
