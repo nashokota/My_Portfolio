@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data;
-using MySql.Data.MySqlClient;   // ✅ Use MySQL namespace
+using System.Data.SqlClient;
 
 namespace My_Portfolio
 {
@@ -25,9 +25,9 @@ namespace My_Portfolio
         // --- LOAD METHODS ---
         private void LoadProjects()
         {
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
-                MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM Projects", conn);
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Projects", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 gvProjects.DataSource = dt;
@@ -37,9 +37,9 @@ namespace My_Portfolio
 
         private void LoadServices()
         {
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
-                MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM Services", conn);
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Services", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 gvServices.DataSource = dt;
@@ -49,9 +49,9 @@ namespace My_Portfolio
 
         private void LoadTestimonials()
         {
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
-                MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM Testimonials", conn);
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Testimonials", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 gvTestimonials.DataSource = dt;
@@ -63,7 +63,7 @@ namespace My_Portfolio
         protected void btnLogout_Click(object sender, EventArgs e)
         {
             Session["IsAdmin"] = null;
-            Response.Redirect("admin_login.aspx");
+            Response.Redirect("AdminLogin.aspx");
         }
 
         // --- ADD NEW BUTTONS ---
@@ -81,8 +81,6 @@ namespace My_Portfolio
         {
             Response.Redirect("AddTestimonial.aspx");
         }
-
-        // ✅ You can later add RowEditing, RowUpdating, RowDeleting for GridView here
 
         // --- PROJECTS GRIDVIEW EVENTS ---
         protected void gvProjects_RowEditing(object sender, System.Web.UI.WebControls.GridViewEditEventArgs e)
@@ -108,18 +106,20 @@ namespace My_Portfolio
             string description = ((System.Web.UI.WebControls.TextBox)row.Cells[1].Controls[0]).Text;
             string sourceCode = ((System.Web.UI.WebControls.TextBox)row.Cells[2].Controls[0]).Text;
 
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
-                string query = "UPDATE Projects SET Title=@Title, Description=@Description, LiveDemo=@LiveDemo, SourceCode=@SourceCode WHERE ProjectID=@ProjectID";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Title", title);
-                cmd.Parameters.AddWithValue("@Description", description);
-                cmd.Parameters.AddWithValue("@SourceCode", sourceCode);
-                cmd.Parameters.AddWithValue("@ProjectID", projectId);
+                string query = "UPDATE Projects SET Title=@Title, Description=@Description, SourceCode=@SourceCode WHERE ProjectID=@ProjectID";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Title", title);
+                    cmd.Parameters.AddWithValue("@Description", description);
+                    cmd.Parameters.AddWithValue("@SourceCode", sourceCode);
+                    cmd.Parameters.AddWithValue("@ProjectID", projectId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
             }
 
             gvProjects.EditIndex = -1;
@@ -132,15 +132,16 @@ namespace My_Portfolio
 
             int projectId = Convert.ToInt32(gvProjects.DataKeys[e.RowIndex].Value);
 
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
                 string query = "DELETE FROM Projects WHERE ProjectID=@ProjectID";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@ProjectID", projectId);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ProjectID", projectId);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
             }
 
             LoadProjects();
@@ -170,18 +171,20 @@ namespace My_Portfolio
             string description = ((System.Web.UI.WebControls.TextBox)row.Cells[1].Controls[0]).Text;
             string iconClass = ((System.Web.UI.WebControls.TextBox)row.Cells[2].Controls[0]).Text;
 
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
                 string query = "UPDATE Services SET Title=@Title, Description=@Description, IconClass=@IconClass WHERE ServiceID=@ServiceID";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Title", title);
-                cmd.Parameters.AddWithValue("@Description", description);
-                cmd.Parameters.AddWithValue("@IconClass", iconClass);
-                cmd.Parameters.AddWithValue("@ServiceID", serviceId);
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Title", title);
+                    cmd.Parameters.AddWithValue("@Description", description);
+                    cmd.Parameters.AddWithValue("@IconClass", iconClass);
+                    cmd.Parameters.AddWithValue("@ServiceID", serviceId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
             }
 
             gvServices.EditIndex = -1;
@@ -194,15 +197,16 @@ namespace My_Portfolio
 
             int serviceId = Convert.ToInt32(gvServices.DataKeys[e.RowIndex].Value);
 
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
                 string query = "DELETE FROM Services WHERE ServiceID=@ServiceID";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@ServiceID", serviceId);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ServiceID", serviceId);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
             }
 
             LoadServices();
@@ -233,19 +237,21 @@ namespace My_Portfolio
             int stars = Convert.ToInt32(((System.Web.UI.WebControls.TextBox)row.Cells[2].Controls[0]).Text);
             string imageUrl = ((System.Web.UI.WebControls.TextBox)row.Cells[3].Controls[0]).Text;
 
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
-                string query = "UPDATE Testimonials SET Name=@Name, Feedback=@Feedback, Stars=@Stars, ImageUrl=@ImageUrl WHERE TestimonialID=@TestimonialID";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Name", name);
-                cmd.Parameters.AddWithValue("@Feedback", feedback);
-                cmd.Parameters.AddWithValue("@Stars", stars);
-                cmd.Parameters.AddWithValue("@ImageUrl", imageUrl);
-                cmd.Parameters.AddWithValue("@TestimonialID", testimonialId);
+                string query = "UPDATE Testimonials SET user_name=@Name, message=@Feedback, rating=@Stars, ImageUrl=@ImageUrl WHERE TestimonialID=@TestimonialID";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Name", name);
+                    cmd.Parameters.AddWithValue("@Feedback", feedback);
+                    cmd.Parameters.AddWithValue("@Stars", stars);
+                    cmd.Parameters.AddWithValue("@ImageUrl", imageUrl);
+                    cmd.Parameters.AddWithValue("@TestimonialID", testimonialId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
             }
 
             gvTestimonials.EditIndex = -1;
@@ -258,20 +264,19 @@ namespace My_Portfolio
 
             int testimonialId = Convert.ToInt32(gvTestimonials.DataKeys[e.RowIndex].Value);
 
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
                 string query = "DELETE FROM Testimonials WHERE TestimonialID=@TestimonialID";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@TestimonialID", testimonialId);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@TestimonialID", testimonialId);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
             }
 
             LoadTestimonials();
         }
-
-
     }
 }

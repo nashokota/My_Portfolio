@@ -1,14 +1,13 @@
-﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
-using System.Xml.Linq;
+using System.Data.SqlClient;
+using System.Web.UI;
 
 namespace My_Portfolio
 {
     public partial class Default : System.Web.UI.Page
     {
-        // Your database connection string (from Web.config)
+        // Your SQL Server connection string (from Web.config)
         private string connStr = System.Configuration.ConfigurationManager
                           .ConnectionStrings["PortfolioDB"].ConnectionString;
 
@@ -25,9 +24,9 @@ namespace My_Portfolio
         // Load services from database
         private void LoadServices()
         {
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
-                MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM Services", conn);
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Services", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
@@ -39,10 +38,10 @@ namespace My_Portfolio
         // Load projects from database
         private void LoadProjects()
         {
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM Projects", conn);
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Projects", conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
@@ -60,10 +59,10 @@ namespace My_Portfolio
         // Load testimonials
         private void LoadTestimonials()
         {
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
                 string query = "SELECT * FROM Testimonials ORDER BY TestimonialID DESC"; // latest first
-                MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
@@ -81,7 +80,6 @@ namespace My_Portfolio
             Response.TransmitFile(filePath);
             Response.End();
         }
-
 
         // About Read More
         protected void btnReadMore_Click_about(object sender, EventArgs e)

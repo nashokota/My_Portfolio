@@ -1,14 +1,14 @@
 ﻿using System;
-using MySql.Data.MySqlClient;   // ✅ Use MySQL namespace
+using System.Data.SqlClient;
 
 namespace My_Portfolio
 {
     public partial class AddProject : System.Web.UI.Page
     {
-        // ✅ Replace with your own MySQL connection string
-        // Example for XAMPP (local MySQL, root user, no password, DB = PortfolioDB)
+        // SQL Server connection string from Web.config
         private string connStr = System.Configuration.ConfigurationManager
                           .ConnectionStrings["PortfolioDB"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["IsAdmin"] == null)
@@ -21,18 +21,20 @@ namespace My_Portfolio
             string description = txtDescription.Text.Trim();
             string sourceCode = txtSourceCode.Text.Trim();
 
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
-                string query = "INSERT INTO Projects (Title, Description, LiveDemo, SourceCode) " +
-                               "VALUES (@Title, @Description, @LiveDemo, @SourceCode)";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Title", title);
-                cmd.Parameters.AddWithValue("@Description", description);
-                cmd.Parameters.AddWithValue("@SourceCode", sourceCode);
+                string query = "INSERT INTO Projects (Title, Description, SourceCode) " +
+                               "VALUES (@Title, @Description, @SourceCode)";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Title", title);
+                    cmd.Parameters.AddWithValue("@Description", description);
+                    cmd.Parameters.AddWithValue("@SourceCode", sourceCode);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
             }
 
             Response.Write("<script>alert('Project added successfully!');window.location='Admin.aspx';</script>");
