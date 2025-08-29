@@ -488,12 +488,15 @@ span {
     padding: 1rem 2rem;
     margin-top: 2rem;
     font-size: 1.6rem;
-    color: #fff;
+    font-weight: 600;
+    color: var(--bg-color);
     background-color: var(--main-color);
-    border-radius: 0.5rem;
+    border-radius: 4rem;
     cursor: pointer;
     border: none;
-    transition: 0.3s;
+    letter-spacing: 0.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
     .contact .btn:hover {
