@@ -131,13 +131,5 @@ namespace My_Portfolio
             // Clear the form
             txtName.Text = txtEmail.Text = txtPhone.Text = txtSubject.Text = txtMessage.Text = "";
         }
-
-        // Service read more
-        protected void btnReadMoreService_Click(object sender, EventArgs e)
-        {
-            var btn = (System.Web.UI.WebControls.Button)sender;
-            int serviceId = Convert.ToInt32(btn.CommandArgument);
-            Response.Redirect($"service-details.aspx?id={serviceId}");
-        }
     }
 }

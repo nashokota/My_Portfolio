@@ -77,12 +77,6 @@
                             <i class='bx <%# Eval("IconClass") %>'></i>
                             <h3><%# Eval("Title") %></h3>
                             <p><%# Eval("Description") %></p>
-                            <!-- ❌ should NOT trigger validation -->
-                            <asp:Button ID="btnReadMoreService" runat="server"
-                                Text="Read More" CssClass="btn"
-                                CommandArgument='<%# Eval("ServiceID") %>'
-                                OnClick="btnReadMoreService_Click"
-                                CausesValidation="false" />
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>

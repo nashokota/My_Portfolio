@@ -3,23 +3,27 @@
   "WorkspaceRootPath": "E:\\Coding\\New folder\\My_Portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\academics.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\academics.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\academics.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\academics.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\admin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\admin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\academics.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\academics.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\academics.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\academics.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -31,59 +35,55 @@
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\admin_login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\adminskills.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\adminskills.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\adminskills.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\css\\adminskills.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\css\\adminskills.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\css\\adminskills.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\adminskills.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\adminskills.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\adminskills.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\addservice.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\addservice.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\addservice.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\addservice.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\addservice.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\addservice.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\submittestimonial.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\submittestimonial.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\submittestimonial.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\submittestimonial.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\submittestimonial.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\submittestimonial.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\contact.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\contact.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\contact.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\addproject.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\addproject.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\addproject.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\addproject.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\addproject.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\addproject.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
@@ -91,7 +91,7 @@
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\css\\testimonial.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\css\\testimonial.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\css\\testimonial.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
@@ -99,19 +99,19 @@
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\css\\admin_login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\css\\admin_login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\css\\admin_login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\css\\addservice.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\css\\addservice.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\css\\addservice.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|e:\\coding\\new folder\\my_portfolio\\my_portfolio\\css\\addproject.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|E:\\Coding\\New folder\\My_Portfolio\\my_portfolio\\css\\addproject.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{31DC8A6D-0F68-43E9-A0CC-07B8D0C1409F}|My_Portfolio\\My_Portfolio.csproj|solutionrelative:my_portfolio\\css\\addproject.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -122,24 +122,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "admin_login.aspx.cs",
-              "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\admin_login.aspx.cs",
-              "RelativeDocumentMoniker": "My_Portfolio\\admin_login.aspx.cs",
-              "ToolTip": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\admin_login.aspx.cs",
-              "RelativeToolTip": "My_Portfolio\\admin_login.aspx.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwCIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T10:45:40.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Admin.aspx",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\Admin.aspx",
               "RelativeDocumentMoniker": "My_Portfolio\\Admin.aspx",
@@ -147,25 +134,23 @@
               "RelativeToolTip": "My_Portfolio\\Admin.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-05T17:51:26.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:51:26.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Admin.aspx.cs",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\Admin.aspx.cs",
               "RelativeDocumentMoniker": "My_Portfolio\\Admin.aspx.cs",
               "ToolTip": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\Admin.aspx.cs",
               "RelativeToolTip": "My_Portfolio\\Admin.aspx.cs",
-              "ViewState": "AgIAABsBAAAAAAAAAAAIwDMBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAvwE4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T10:46:39.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T10:46:39.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Academics.aspx",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\Academics.aspx",
               "RelativeDocumentMoniker": "My_Portfolio\\Academics.aspx",
@@ -173,12 +158,11 @@
               "RelativeToolTip": "My_Portfolio\\Academics.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-05T17:48:47.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:48:47.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Academics.aspx.cs",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\Academics.aspx.cs",
               "RelativeDocumentMoniker": "My_Portfolio\\Academics.aspx.cs",
@@ -186,8 +170,7 @@
               "RelativeToolTip": "My_Portfolio\\Academics.aspx.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T17:49:52.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:49:52.561Z"
             },
             {
               "$type": "Document",
@@ -204,7 +187,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebForm1.aspx.cs",
+              "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\WebForm1.aspx.cs",
+              "RelativeDocumentMoniker": "My_Portfolio\\WebForm1.aspx.cs",
+              "ToolTip": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\WebForm1.aspx.cs",
+              "RelativeToolTip": "My_Portfolio\\WebForm1.aspx.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAuwIQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T18:04:15.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "admin_login.aspx.cs",
+              "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\admin_login.aspx.cs",
+              "RelativeDocumentMoniker": "My_Portfolio\\admin_login.aspx.cs",
+              "ToolTip": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\admin_login.aspx.cs",
+              "RelativeToolTip": "My_Portfolio\\admin_login.aspx.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwCIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T10:45:40.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "admin_login.aspx",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\admin_login.aspx",
               "RelativeDocumentMoniker": "My_Portfolio\\admin_login.aspx",
@@ -212,12 +220,11 @@
               "RelativeToolTip": "My_Portfolio\\admin_login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-05T10:45:05.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T10:45:05.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AdminSkills.aspx",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\AdminSkills.aspx",
               "RelativeDocumentMoniker": "My_Portfolio\\AdminSkills.aspx",
@@ -225,12 +232,11 @@
               "RelativeToolTip": "My_Portfolio\\AdminSkills.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-05T18:14:37.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T18:14:37.665Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "adminskills.css",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\css\\adminskills.css",
               "RelativeDocumentMoniker": "My_Portfolio\\css\\adminskills.css",
@@ -238,12 +244,11 @@
               "RelativeToolTip": "My_Portfolio\\css\\adminskills.css",
               "ViewState": "AgIAABQAAAAAAAAAAAAuwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-05T18:16:57.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T18:16:57.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AdminSkills.aspx.cs",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\AdminSkills.aspx.cs",
               "RelativeDocumentMoniker": "My_Portfolio\\AdminSkills.aspx.cs",
@@ -251,25 +256,11 @@
               "RelativeToolTip": "My_Portfolio\\AdminSkills.aspx.cs",
               "ViewState": "AgIAAG8AAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T18:15:00.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T18:15:00.419Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "WebForm1.aspx.cs",
-              "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\WebForm1.aspx.cs",
-              "RelativeDocumentMoniker": "My_Portfolio\\WebForm1.aspx.cs",
-              "ToolTip": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\WebForm1.aspx.cs",
-              "RelativeToolTip": "My_Portfolio\\WebForm1.aspx.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowIwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T18:04:15.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "AddService.aspx",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\AddService.aspx",
               "RelativeDocumentMoniker": "My_Portfolio\\AddService.aspx",
@@ -277,12 +268,11 @@
               "RelativeToolTip": "My_Portfolio\\AddService.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-05T17:50:47.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:50:47.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AddService.aspx.cs",
               "DocumentMoniker": "E:\\Coding\\New folder\\My_Portfolio\\My_Portfolio\\AddService.aspx.cs",
               "RelativeDocumentMoniker": "My_Portfolio\\AddService.aspx.cs",
@@ -290,8 +280,7 @@
               "RelativeToolTip": "My_Portfolio\\AddService.aspx.cs",
               "ViewState": "AgIAACYAAAAAAAAAAADwvzcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T17:51:16.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:51:16.243Z"
             },
             {
               "$type": "Document",
@@ -303,8 +292,7 @@
               "RelativeToolTip": "My_Portfolio\\SubmitTestimonial.aspx.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAIwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T17:54:02.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:54:02.458Z"
             },
             {
               "$type": "Document",
@@ -316,8 +304,7 @@
               "RelativeToolTip": "My_Portfolio\\SubmitTestimonial.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-05T17:53:26.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:53:26.651Z"
             },
             {
               "$type": "Document",
@@ -329,8 +316,7 @@
               "RelativeToolTip": "My_Portfolio\\Contact.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T17:53:06.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:53:06.278Z"
             },
             {
               "$type": "Document",
@@ -342,8 +328,7 @@
               "RelativeToolTip": "My_Portfolio\\Contact.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-05T17:52:46.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:52:46.005Z"
             },
             {
               "$type": "Document",
@@ -355,8 +340,7 @@
               "RelativeToolTip": "My_Portfolio\\AddProject.aspx.cs",
               "ViewState": "AgIAACYAAAAAAAAAAADwvz0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T17:50:34.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:50:34.602Z"
             },
             {
               "$type": "Document",
@@ -368,8 +352,7 @@
               "RelativeToolTip": "My_Portfolio\\AddProject.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-05T17:50:09.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:50:09.652Z"
             },
             {
               "$type": "Document",
@@ -381,8 +364,7 @@
               "RelativeToolTip": "My_Portfolio\\About.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-05T17:48:44.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:48:44.704Z"
             },
             {
               "$type": "Document",
@@ -394,8 +376,7 @@
               "RelativeToolTip": "My_Portfolio\\js\\script.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-05T17:48:11.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:48:11.645Z"
             },
             {
               "$type": "Document",
@@ -407,8 +388,7 @@
               "RelativeToolTip": "My_Portfolio\\css\\testimonial.css",
               "ViewState": "AgIAADcAAAAAAAAAAAAwwFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-05T17:45:52.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:45:52.963Z"
             },
             {
               "$type": "Document",
@@ -420,8 +400,7 @@
               "RelativeToolTip": "My_Portfolio\\css\\admin_login.css",
               "ViewState": "AgIAAEEAAAAAAAAAAAAuwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-05T17:45:14.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:45:14.265Z"
             },
             {
               "$type": "Document",
@@ -433,8 +412,7 @@
               "RelativeToolTip": "My_Portfolio\\css\\admin.css",
               "ViewState": "AgIAAFcAAAAAAAAAAAAuwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-05T17:44:58.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:44:58.231Z"
             },
             {
               "$type": "Document",
@@ -446,8 +424,7 @@
               "RelativeToolTip": "My_Portfolio\\css\\addservice.css",
               "ViewState": "AgIAAEoAAAAAAAAAAAAuwGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-05T17:44:41.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:44:41.659Z"
             },
             {
               "$type": "Document",
@@ -459,8 +436,7 @@
               "RelativeToolTip": "My_Portfolio\\css\\addproject.css",
               "ViewState": "AgIAAEkAAAAAAAAAAAAuwGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-05T17:44:18.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T17:44:18.258Z"
             },
             {
               "$type": "Document",
@@ -472,8 +448,7 @@
               "RelativeToolTip": "My_Portfolio\\js\\main.js",
               "ViewState": "AgIAAEMAAAAAAAAAAAAIwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-29T11:00:10.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T11:00:10.442Z"
             },
             {
               "$type": "Document",
@@ -485,8 +460,7 @@
               "RelativeToolTip": "My_Portfolio\\css\\style.css",
               "ViewState": "AgIAAMACAAAAAAAAAAAuwNoCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-29T10:02:07.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T10:02:07.707Z"
             }
           ]
         }
