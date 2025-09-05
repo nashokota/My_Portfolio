@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Web;
 using System.Web.UI.WebControls;
 
 namespace My_Portfolio
@@ -13,8 +14,12 @@ namespace My_Portfolio
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["IsAdmin"] == null)
-                Response.Redirect("AdminLogin.aspx");
+            // ✅ Check session and cookie for authentication
+            if ((Session["IsAdmin"] == null || !(bool)Session["IsAdmin"]) &&
+                (Request.Cookies["IsAdmin"] == null || Request.Cookies["IsAdmin"].Value != "true"))
+            {
+                Response.Redirect("admin_login.aspx");
+            }
 
             if (!IsPostBack)
             {
@@ -67,7 +72,17 @@ namespace My_Portfolio
         // ================== LOGOUT ==================
         protected void btnLogout_Click(object sender, EventArgs e)
         {
+            // ✅ Clear session
             Session["IsAdmin"] = null;
+
+            // ✅ Clear cookie
+            if (Request.Cookies["IsAdmin"] != null)
+            {
+                HttpCookie cookie = new HttpCookie("IsAdmin");
+                cookie.Expires = DateTime.Now.AddDays(-1); // expire immediately
+                Response.Cookies.Add(cookie);
+            }
+
             Response.Redirect("admin_login.aspx");
         }
 
@@ -103,9 +118,6 @@ namespace My_Portfolio
 
         protected void gvProjects_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            if (gvProjects.DataKeys == null || gvProjects.DataKeys.Count == 0) return;
-            if (e.RowIndex < 0 || e.RowIndex >= gvProjects.DataKeys.Count) return;
-
             int projectId = Convert.ToInt32(gvProjects.DataKeys[e.RowIndex].Value);
             GridViewRow row = gvProjects.Rows[e.RowIndex];
 
@@ -133,9 +145,6 @@ namespace My_Portfolio
 
         protected void gvProjects_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            if (gvProjects.DataKeys == null || gvProjects.DataKeys.Count == 0) return;
-            if (e.RowIndex < 0 || e.RowIndex >= gvProjects.DataKeys.Count) return;
-
             int projectId = Convert.ToInt32(gvProjects.DataKeys[e.RowIndex].Value);
 
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -167,9 +176,6 @@ namespace My_Portfolio
 
         protected void gvServices_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            if (gvServices.DataKeys == null || gvServices.DataKeys.Count == 0) return;
-            if (e.RowIndex < 0 || e.RowIndex >= gvServices.DataKeys.Count) return;
-
             int serviceId = Convert.ToInt32(gvServices.DataKeys[e.RowIndex].Value);
             GridViewRow row = gvServices.Rows[e.RowIndex];
 
@@ -197,9 +203,6 @@ namespace My_Portfolio
 
         protected void gvServices_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            if (gvServices.DataKeys == null || gvServices.DataKeys.Count == 0) return;
-            if (e.RowIndex < 0 || e.RowIndex >= gvServices.DataKeys.Count) return;
-
             int serviceId = Convert.ToInt32(gvServices.DataKeys[e.RowIndex].Value);
 
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -231,9 +234,6 @@ namespace My_Portfolio
 
         protected void gvTestimonials_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            if (gvTestimonials.DataKeys == null || gvTestimonials.DataKeys.Count == 0) return;
-            if (e.RowIndex < 0 || e.RowIndex >= gvTestimonials.DataKeys.Count) return;
-
             int testimonialId = Convert.ToInt32(gvTestimonials.DataKeys[e.RowIndex].Value);
             GridViewRow row = gvTestimonials.Rows[e.RowIndex];
 
@@ -263,9 +263,6 @@ namespace My_Portfolio
 
         protected void gvTestimonials_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            if (gvTestimonials.DataKeys == null || gvTestimonials.DataKeys.Count == 0) return;
-            if (e.RowIndex < 0 || e.RowIndex >= gvTestimonials.DataKeys.Count) return;
-
             int testimonialId = Convert.ToInt32(gvTestimonials.DataKeys[e.RowIndex].Value);
 
             using (SqlConnection conn = new SqlConnection(connStr))
