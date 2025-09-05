@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // 1. Project Card Hover Effect
+    // Project Card Hover Effect
     document.querySelectorAll('.project-card').forEach(card => {
         card.addEventListener('mouseenter', () => {
             card.style.boxShadow = '0 16px 40px rgba(39,41,109,0.22)';
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 2. Modal Popup for Project Details
+    // Modal Popup for Project Details
     const modal = document.createElement('div');
     modal.id = 'project-modal';
     modal.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);display:none;justify-content:center;align-items:center;z-index:9999;';
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 3. Smooth Scroll for Navbar Links
+    // Smooth Scroll for Navbar Links
     document.querySelectorAll('.navbar a[href^="#"]').forEach(link => {
         link.addEventListener('click', function (e) {
             const target = document.querySelector(this.getAttribute('href'));
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 4. Button Ripple Effect
+    // Button Ripple Effect
     document.querySelectorAll('.btn').forEach(btn => {
         btn.addEventListener('click', function (e) {
             const ripple = document.createElement('span');

@@ -10,10 +10,9 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- ASP.NET requires server-side form -->
     <form id="form1" runat="server">
 
-        <!-- ✅ HEADER -->
+        <!--HEADER -->
         <header class="header">
             <a href="#home" class="logo">AL - Mubtasim Preom</a>
             <i class='bx bx-menu' id="menu-icon"></i>
@@ -27,7 +26,7 @@
             </nav>
         </header>
 
-        <!-- ✅ HOME SECTION -->
+        <!--HOME SECTION -->
         <section class="home" id="home">
             <div class="home-img">
                 <img src="image/Al_Mubtasim_Preom-removebg-preview.png" alt="Home Image" />
@@ -42,13 +41,13 @@
                     <a href="https://www.linkedin.com/in/mubtasim-preom-220273315/" target="_blank"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://github.com/nashokota" target="_blank"><i class='bx bxl-github'></i></a>
                 </div>
-                <!-- ❌ should NOT trigger validation -->
+                
                 <asp:Button ID="btnDownloadCV" runat="server" Text="Download CV" CssClass="btn"
                     OnClick="btnDownloadCV_Click" CausesValidation="false" />
             </div>
         </section>
 
-        <!-- ✅ ABOUT SECTION -->
+        <!--ABOUT SECTION -->
         <section class="about" id="about">
             <div class="about-content">
                 <h2 class="heading">About <span>Me</span></h2>
@@ -58,7 +57,6 @@
                     My academic journey has strengthened my foundation in algorithms, data structures, database systems,
                     and software engineering, while also giving me hands-on experience with programming in C, C++, Java, and Python.
                 </p>
-                <!-- ❌ should NOT trigger validation -->
                 <asp:Button ID="btnReadMore" runat="server" Text="Read More" CssClass="btn"
                     OnClick="btnReadMore_Click_about" CausesValidation="false" />
             </div>
@@ -67,7 +65,7 @@
             </div>
         </section>
 
-        <!-- ✅ SERVICES SECTION -->
+        <!--SERVICES SECTION -->
         <section class="services" id="services">
             <h2 class="heading">My <span>Services</span></h2>
             <div class="service-container">
@@ -83,7 +81,7 @@
             </div>
         </section>
 
-        <!-- ✅ PROJECTS SECTION -->
+        <!--PROJECTS SECTION -->
         <section class="projects" id="projects">
             <h2 class="heading">My <span>Projects</span></h2><br />
             <div class="projects-container">
@@ -101,7 +99,7 @@
             </div>
         </section>
 
-        <!-- ✅ TESTIMONIAL -->
+        <!--TESTIMONIAL -->
         <section class="testimonial" id="testimonial">
             <div class="testimonial-container">
                 <h2 class="heading">What <span>People Say</span></h2>
@@ -119,13 +117,12 @@
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
-                <!-- ❌ should NOT trigger validation -->
                 <asp:Button ID="btnGiveFeedback" runat="server" CssClass="btn" Text="Give Feedback"
                     OnClick="btnGiveFeedback_Click" CausesValidation="false" />
             </div>
         </section>
 
-        <!-- ✅ CONTACT FORM -->
+        <!--CONTACT FORM -->
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
 
@@ -158,12 +155,12 @@
                 ErrorMessage="* Message is required" ForeColor="Red" Display="Dynamic"
                 ValidationGroup="ContactGroup"></asp:RequiredFieldValidator>
 
-            <!-- ✅ Only this button validates -->
+            <!--button validates -->
             <asp:Button ID="btnSend" runat="server" Text="Send Message" CssClass="btn"
                 OnClick="btnSend_Click" ValidationGroup="ContactGroup" />
         </section>
 
-        <!-- ✅ FOOTER -->
+        <!--FOOTER -->
         <footer class="footer">
             <div class="social">
                 <a href="https://www.facebook.com/preom27" target="_blank"><i class='bx bxl-facebook'></i></a>
@@ -177,7 +174,6 @@
             </p>
         </footer>
 
-        <!-- JS -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="js/main.js"></script>
         <script src="js/script.js"></script>

@@ -5,7 +5,6 @@ namespace My_Portfolio
 {
     public partial class AddProject : System.Web.UI.Page
     {
-        // SQL Server connection string from Web.config
         private string connStr = System.Configuration.ConfigurationManager
                           .ConnectionStrings["PortfolioDB"].ConnectionString;
 

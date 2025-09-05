@@ -1,12 +1,10 @@
-﻿/* ===================== GENERAL RESET ===================== */
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-/* ===================== PAGE LAYOUT ===================== */
 body {
     background-color: #f5f5f5;
     padding: 20px;
@@ -25,7 +23,6 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* ===================== BUTTONS ===================== */
 .btn-home, .btn-save {
     background-color: #007BFF;
     color: white;
@@ -41,7 +38,6 @@ h2 {
         background-color: #0056b3;
     }
 
-/* ===================== FORM FIELDS ===================== */
 .form-group {
     margin-bottom: 15px;
     display: flex;
@@ -61,7 +57,6 @@ h2 {
     max-width: 400px;
 }
 
-/* ===================== GRIDVIEW STYLING ===================== */
 asp\:GridView, .gvSkills {
     width: 100%;
     border-collapse: collapse;
@@ -89,7 +84,6 @@ asp\:GridView, .gvSkills {
         background-color: #e0f0ff;
     }
 
-/* ===================== RESPONSIVE ===================== */
 @media screen and (max-width: 768px) {
     .input-field {
         width: 100%;

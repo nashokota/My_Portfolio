@@ -4,7 +4,6 @@
 <head runat="server">
     <title>My Academics & Skills</title>
     <link href="css/academics.css" rel="stylesheet" />
-    <!-- Boxicons for skill icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>

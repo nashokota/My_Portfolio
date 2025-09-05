@@ -7,7 +7,6 @@ namespace My_Portfolio
 {
     public partial class Default : System.Web.UI.Page
     {
-        // Your SQL Server connection string (from Web.config)
         private string connStr = System.Configuration.ConfigurationManager
                           .ConnectionStrings["PortfolioDB"].ConnectionString;
 
@@ -21,7 +20,6 @@ namespace My_Portfolio
             }
         }
 
-        // Load services from database
         private void LoadServices()
         {
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -35,7 +33,6 @@ namespace My_Portfolio
             }
         }
 
-        // Load projects from database
         private void LoadProjects()
         {
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -50,18 +47,16 @@ namespace My_Portfolio
             }
         }
 
-        // Take viewer to a new page to give feedback
         protected void btnGiveFeedback_Click(object sender, EventArgs e)
         {
             Response.Redirect("SubmitTestimonial.aspx");
         }
 
-        // Load testimonials
         private void LoadTestimonials()
         {
             using (SqlConnection conn = new SqlConnection(connStr))
             {
-                string query = "SELECT * FROM Testimonials ORDER BY TestimonialID DESC"; // latest first
+                string query = "SELECT * FROM Testimonials ORDER BY TestimonialID DESC"; 
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -71,23 +66,20 @@ namespace My_Portfolio
             }
         }
 
-        // CV download
         protected void btnDownloadCV_Click(object sender, EventArgs e)
         {
-            string filePath = Server.MapPath("~/files/CV.pdf"); // path to your CV file
+            string filePath = Server.MapPath("~/files/CV.pdf"); 
             Response.ContentType = "application/pdf";
             Response.AppendHeader("Content-Disposition", "attachment; filename=CV.pdf");
             Response.TransmitFile(filePath);
             Response.End();
         }
 
-        // About Read More
         protected void btnReadMore_Click_about(object sender, EventArgs e)
         {
             Response.Redirect("academics.aspx");
         }
 
-        // Contact form submit
         protected void btnSend_Click(object sender, EventArgs e)
         {
             string name = txtName.Text.Trim();
@@ -102,7 +94,7 @@ namespace My_Portfolio
                 string.IsNullOrEmpty(message))
             {
                 Response.Write("<script>alert('Please fill in all the fields before submitting.');</script>");
-                return; // Stop execution if validation fails
+                return; 
             }
 
             string connStr = System.Configuration.ConfigurationManager
@@ -128,7 +120,6 @@ namespace My_Portfolio
 
             Response.Write($"<script>alert('Thank you {name}, your message has been sent.');</script>");
 
-            // Clear the form
             txtName.Text = txtEmail.Text = txtPhone.Text = txtSubject.Text = txtMessage.Text = "";
         }
     }

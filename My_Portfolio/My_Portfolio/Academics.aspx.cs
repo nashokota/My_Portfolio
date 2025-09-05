@@ -41,7 +41,6 @@ namespace My_Portfolio
                 string category = row["Category"].ToString();
                 string skillName = row["SkillName"].ToString();
 
-                // Check if category exists in the grouped list
                 dynamic catGroup = groupedSkills.Find(x => x.Category == category);
                 if (catGroup == null)
                 {

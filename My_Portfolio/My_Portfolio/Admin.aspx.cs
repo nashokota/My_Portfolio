@@ -29,7 +29,7 @@ namespace My_Portfolio
             }
         }
 
-        // ================== LOAD METHODS ==================
+        //LOAD METHODS
         private void LoadProjects()
         {
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -82,7 +82,7 @@ namespace My_Portfolio
             }
         }
 
-        // ================== LOGOUT ==================
+        //LOGOUT
         protected void btnLogout_Click(object sender, EventArgs e)
         {
             Session["IsAdmin"] = null;
@@ -95,13 +95,13 @@ namespace My_Portfolio
             Response.Redirect("admin_login.aspx");
         }
 
-        // ================== ADD NEW ==================
+        // ADD NEW
         protected void btnAddProject_Click(object sender, EventArgs e) => Response.Redirect("AddProject.aspx");
         protected void btnAddService_Click(object sender, EventArgs e) => Response.Redirect("AddService.aspx");
         protected void btnAddTestimonial_Click(object sender, EventArgs e) => Response.Redirect("AddTestimonial.aspx");
 
-        // ================== GRIDVIEW EVENTS ==================
-        // ---------- PROJECTS ----------
+        // GRIDVIEW EVENTS
+        //PROJECTS
         protected void gvProjects_RowEditing(object sender, GridViewEditEventArgs e) { gvProjects.EditIndex = e.NewEditIndex; LoadProjects(); }
         protected void gvProjects_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { gvProjects.EditIndex = -1; LoadProjects(); }
         protected void gvProjects_RowUpdating(object sender, GridViewUpdateEventArgs e)
@@ -145,7 +145,7 @@ namespace My_Portfolio
             LoadProjects();
         }
 
-        // ---------- SERVICES ----------
+        //SERVICES   
         protected void gvServices_RowEditing(object sender, GridViewEditEventArgs e) { gvServices.EditIndex = e.NewEditIndex; LoadServices(); }
         protected void gvServices_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { gvServices.EditIndex = -1; LoadServices(); }
         protected void gvServices_RowUpdating(object sender, GridViewUpdateEventArgs e)
@@ -189,7 +189,7 @@ namespace My_Portfolio
             LoadServices();
         }
 
-        // ---------- TESTIMONIALS ----------
+        //TESTIMONIALS
         protected void gvTestimonials_RowEditing(object sender, GridViewEditEventArgs e) { gvTestimonials.EditIndex = e.NewEditIndex; LoadTestimonials(); }
         protected void gvTestimonials_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { gvTestimonials.EditIndex = -1; LoadTestimonials(); }
         protected void gvTestimonials_RowUpdating(object sender, GridViewUpdateEventArgs e)
@@ -235,7 +235,7 @@ namespace My_Portfolio
             LoadTestimonials();
         }
 
-        // ---------- SKILLS ----------
+        //SKILLS
         protected void btnAddSkill_Click(object sender, EventArgs e)
         {
             string skillName = txtSkillName.Text.Trim();

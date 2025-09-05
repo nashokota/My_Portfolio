@@ -1,5 +1,4 @@
-﻿/* Reset & base */
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +14,6 @@ body {
     padding: 40px;
 }
 
-/* Form container */
 form {
     background: #fff;
     padding: 30px 40px;
@@ -25,19 +23,16 @@ form {
     max-width: 500px;
 }
 
-/* Page heading */
 h1 {
     text-align: center;
     margin-bottom: 25px;
     color: #2c3e50;
 }
 
-/* Form group */
 div {
     margin-bottom: 15px;
 }
 
-/* Labels */
 label {
     display: block;
     margin-bottom: 6px;
@@ -45,7 +40,6 @@ label {
     color: #34495e;
 }
 
-/* Textboxes and textarea */
 input[type="text"],
 textarea {
     width: 100%;
@@ -62,12 +56,10 @@ textarea {
         outline: none;
     }
 
-/* Textarea specific */
 textarea {
     resize: vertical;
 }
 
-/* Buttons */
 input[type="submit"],
 input[type="button"],
 button,
@@ -83,14 +75,12 @@ asp\:button {
     font-size: 14px;
 }
 
-    /* Hover effect */
     input[type="submit"]:hover,
     input[type="button"]:hover,
     button:hover {
         background: #2980b9;
     }
 
-/* Back button different color */
 #btnBack {
     background: #7f8c8d;
 }

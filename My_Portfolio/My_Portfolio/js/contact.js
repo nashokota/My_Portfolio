@@ -2,7 +2,7 @@
     const inputs = document.querySelectorAll('.input, .textarea');
 
     inputs.forEach(input => {
-        input.addEventListener('blur', () => { // Check on focus out
+        input.addEventListener('blur', () => { 
             if (input.value.trim() === "") {
                 input.classList.add('invalid');
                 input.classList.remove('valid');

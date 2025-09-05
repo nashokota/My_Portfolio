@@ -20,7 +20,7 @@ namespace My_Portfolio
             int stars = Convert.ToInt32(ddlStars.SelectedValue);
             string photoPath = null;
 
-            // Handle file upload
+            
             if (fuPhoto.HasFile)
             {
                 string folder = Server.MapPath("~/image/testimonials/");
@@ -28,7 +28,7 @@ namespace My_Portfolio
                     Directory.CreateDirectory(folder);
 
                 string fileName = Path.GetFileName(fuPhoto.FileName);
-                photoPath = "image/testimonials/" + fileName; // path to store in DB
+                photoPath = "image/testimonials/" + fileName;
                 fuPhoto.SaveAs(Path.Combine(folder, fileName));
             }
 

@@ -1,5 +1,4 @@
-﻿/* Reset some default browser styles */
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,13 +24,11 @@ body {
     width: 320px;
 }
 
-    /* Heading */
     .login-container h2 {
         margin-bottom: 20px;
         color: #333;
     }
 
-    /* Textboxes */
     .login-container input[type="text"],
     .login-container input[type="password"] {
         width: 100%;
@@ -49,7 +46,6 @@ body {
             border-color: #4facfe;
         }
 
-    /* Buttons */
     .login-container input[type="submit"],
     .login-container input[type="button"],
     .login-container .aspNetDisabled {
@@ -70,7 +66,6 @@ body {
             background: #00c6ff;
         }
 
-/* Error message */
 #lblMessage {
     display: block;
     margin-top: 10px;
@@ -78,7 +73,6 @@ body {
     font-weight: bold;
 }
 
-/* Portfolio button (separate style) */
 #btnView {
     margin-top: 20px;
     padding: 10px 20px;

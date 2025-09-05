@@ -1,4 +1,3 @@
-/* ================== GENERAL RESET ================== */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,6 @@
     scroll-behavior: smooth;
 }
 
-/* ================== ROOT VARIABLES ================== */
 :root {
     --bg-color: white;
     --snd-bg-color: #bedbf892;
@@ -22,7 +20,6 @@
     --fourth-color: #ffffff;
 }
 
-/* ================== BASE ================== */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -38,7 +35,6 @@ section {
     padding: 10rem 9% 2rem;
 }
 
-/* ================== HEADER ================== */
 .header {
     position: fixed;
     width: 100%;
@@ -86,7 +82,6 @@ section {
     cursor: pointer;
 }
 
-/* ================== HOME ================== */
 .home {
     display: flex;
     align-items: center;
@@ -173,7 +168,6 @@ span {
         box-shadow: 0 0 25px var(--main-color), 0 0 25px var(--main-color), 0 0 25px var(--main-color);
     }
 
-/* ================== BUTTON ================== */
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -191,7 +185,6 @@ span {
         box-shadow: 0 0 1.6rem var(--main-color);
     }
 
-/* ================== ABOUT ================== */
 .about {
     display: flex;
     align-items: center;
@@ -235,7 +228,6 @@ span {
         margin: 2rem 0;
     }
 
-/* ================== SERVICES ================== */
 .services h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -286,7 +278,6 @@ span {
     margin: 1rem 0 3rem;
 }
 
-/* ================== PROJECTS ================== */
 .projects-container {
     max-width: 1000px;
     margin: 4rem auto;
@@ -343,7 +334,6 @@ span {
         color: var(--main-color);
     }
 
-/* ================== TESTIMONIAL ================== */
 .testimonial {
     background: var(--snd-bg-color);
     padding: 6rem 2rem;
@@ -426,7 +416,6 @@ span {
     margin-bottom: 1rem;
 }
 
-/* ================== CONTACT FORM ================== */
 .contact {
     background: var(--bg-color);
     padding: 4rem 2rem;
@@ -446,15 +435,13 @@ span {
         color: var(--main-color);
     }
 
-    /* Container for input fields */
     .contact .input-box {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem; /* Space between inputs */
+        gap: 1rem;
     }
 
-/* Input fields */
 .input {
     width: calc(50% - 1rem);
     padding: 1.5rem;
@@ -464,11 +451,10 @@ span {
     border: 0.2rem solid var(--main-color);
     border-radius: 0.5rem;
     margin: 0.75rem 0;
-    transition: 0.3s; /* Smooth transition for border color */
+    transition: 0.3s; 
     resize: none;
 }
 
-/* Textarea */
 .textarea {
     width: 100%;
     padding: 1.5rem;
@@ -479,10 +465,9 @@ span {
     border-radius: 0.5rem;
     margin: 0.75rem 0;
     resize: none;
-    transition: 0.3s; /* Smooth transition for border color */
+    transition: 0.3s; 
 }
 
-/* Submit button */
 .contact .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -503,7 +488,6 @@ span {
         background-color: var(--main-color);
     }
 
-/* ================== VALIDATION BORDER STYLES ================== */
 .input.invalid, .textarea.invalid {
     border-color: red !important;
 }
@@ -512,8 +496,6 @@ span {
     border-color: green !important;
 }
 
-
-/* ================== FOOTER ================== */
 .footer {
     position: relative;
     width: 100%;
@@ -554,10 +536,6 @@ span {
         color: var(--text-color);
         margin-top: 20px;
     }
-
-/* ================== MEDIA QUERIES ================== */
-
-/* Tablet */
 @media (max-width: 1200px) {
     html {
         font-size: 56.25%;
@@ -599,13 +577,11 @@ span {
         padding: 2rem 3%;
     }
 
-    /* Testimonial: 2 columns on tablet */
     .wrapper {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 
-    /* Mobile menu */
     #menu-icon {
         display: block;
     }
@@ -633,7 +609,6 @@ span {
             right: 0;
         }
 
-    /* Home Section */
     .home {
         flex-direction: column;
         text-align: center;
@@ -649,7 +624,6 @@ span {
         margin-top: 4rem;
     }
 
-    /* About Section */
     .about {
         flex-direction: column-reverse;
     }
@@ -664,7 +638,6 @@ span {
     }
 }
 
-/* Mobile */
 @media (max-width: 617px) {
     html {
         font-size: 50%;
@@ -694,7 +667,6 @@ span {
         padding: 2rem;
     }
 
-    /* Testimonial: 1 column on mobile */
     .wrapper {
         grid-template-columns: 1fr;
         gap: 1.5rem;

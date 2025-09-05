@@ -1,5 +1,4 @@
-﻿/* Reset */
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +14,6 @@ body {
     padding: 40px;
 }
 
-/* Form container */
 form {
     background: #fff;
     padding: 30px 40px;
@@ -25,19 +23,16 @@ form {
     max-width: 500px;
 }
 
-/* Heading */
 h1 {
     text-align: center;
     margin-bottom: 25px;
     color: #2c3e50;
 }
 
-/* Form groups */
 div {
     margin-bottom: 15px;
 }
 
-/* Labels */
 label {
     display: block;
     margin-bottom: 6px;
@@ -45,7 +40,6 @@ label {
     color: #34495e;
 }
 
-/* Textboxes */
 input[type="text"],
 textarea {
     width: 100%;
@@ -62,12 +56,10 @@ textarea {
         outline: none;
     }
 
-/* TextArea */
 textarea {
     resize: vertical;
 }
 
-/* Buttons */
 input[type="submit"],
 input[type="button"],
 button,
@@ -89,7 +81,6 @@ asp\:button {
         background: #2980b9;
     }
 
-/* Back button special style */
 #btnBack {
     background: #7f8c8d;
 }
