@@ -33,34 +33,21 @@
             <section class="skills">
                 <h2>Skills</h2>
 
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li><i class='bx bx-code-alt'></i> C</li>
-                        <li><i class='bx bx-code-alt'></i> C++</li>
-                        <li><i class='bx bx-code-alt'></i> Java</li>
-                        <li><i class='bx bx-code-alt'></i> Python</li>
-                    </ul>
-                </div>
+                <asp:Repeater ID="rptSkills" runat="server">
+                    <ItemTemplate>
+                        <div class="skill-category">
+                            <h3><%# Eval("Category") %></h3>
+                            <ul>
+                                <asp:Repeater ID="rptCategorySkills" runat="server" DataSource='<%# Eval("Skills") %>'>
+                                    <ItemTemplate>
+                                        <li><i class='bx bx-code-alt'></i> <%# Container.DataItem %></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </ul>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
 
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li><i class='bx bx-globe'></i> HTML, CSS, JavaScript</li>
-                        <li><i class='bx bx-server'></i> ASP.NET WebForms</li>
-                        <li><i class='bx bx-data'></i> MySQL</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Other Skills</h3>
-                    <ul>
-                        <li><i class='bx bx-check-circle'></i> Problem Solving</li>
-                        <li><i class='bx bx-sitemap'></i> Data Structures & Algorithms</li>
-                        <li><i class='bx bx-cube'></i> Database Systems</li>
-                        <li><i class='bx bx-layer'></i> Software Engineering</li>
-                    </ul>
-                </div>
             </section>
         </div>
     </form>

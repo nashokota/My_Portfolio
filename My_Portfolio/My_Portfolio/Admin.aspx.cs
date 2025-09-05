@@ -8,13 +8,12 @@ namespace My_Portfolio
 {
     public partial class Admin : System.Web.UI.Page
     {
-        // SQL Server connection string from Web.config
         private string connStr = System.Configuration.ConfigurationManager
                                   .ConnectionStrings["PortfolioDB"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // ✅ Check session and cookie for authentication
+            // Authentication check
             if ((Session["IsAdmin"] == null || !(bool)Session["IsAdmin"]) &&
                 (Request.Cookies["IsAdmin"] == null || Request.Cookies["IsAdmin"].Value != "true"))
             {
@@ -26,6 +25,7 @@ namespace My_Portfolio
                 LoadProjects();
                 LoadServices();
                 LoadTestimonials();
+                LoadSkills();
             }
         }
 
@@ -69,58 +69,45 @@ namespace My_Portfolio
             }
         }
 
+        private void LoadSkills()
+        {
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                string query = "SELECT SkillID, SkillName, Category FROM Skills";
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                gvSkills.DataSource = dt;
+                gvSkills.DataBind();
+            }
+        }
+
         // ================== LOGOUT ==================
         protected void btnLogout_Click(object sender, EventArgs e)
         {
-            // ✅ Clear session
             Session["IsAdmin"] = null;
-
-            // ✅ Clear cookie
             if (Request.Cookies["IsAdmin"] != null)
             {
                 HttpCookie cookie = new HttpCookie("IsAdmin");
-                cookie.Expires = DateTime.Now.AddDays(-1); // expire immediately
+                cookie.Expires = DateTime.Now.AddDays(-1);
                 Response.Cookies.Add(cookie);
             }
-
             Response.Redirect("admin_login.aspx");
         }
 
         // ================== ADD NEW ==================
-        protected void btnAddProject_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AddProject.aspx");
-        }
-
-        protected void btnAddService_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AddService.aspx");
-        }
-
-        protected void btnAddTestimonial_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AddTestimonial.aspx");
-        }
+        protected void btnAddProject_Click(object sender, EventArgs e) => Response.Redirect("AddProject.aspx");
+        protected void btnAddService_Click(object sender, EventArgs e) => Response.Redirect("AddService.aspx");
+        protected void btnAddTestimonial_Click(object sender, EventArgs e) => Response.Redirect("AddTestimonial.aspx");
 
         // ================== GRIDVIEW EVENTS ==================
         // ---------- PROJECTS ----------
-        protected void gvProjects_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-            gvProjects.EditIndex = e.NewEditIndex;
-            LoadProjects();
-        }
-
-        protected void gvProjects_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-        {
-            gvProjects.EditIndex = -1;
-            LoadProjects();
-        }
-
+        protected void gvProjects_RowEditing(object sender, GridViewEditEventArgs e) { gvProjects.EditIndex = e.NewEditIndex; LoadProjects(); }
+        protected void gvProjects_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { gvProjects.EditIndex = -1; LoadProjects(); }
         protected void gvProjects_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             int projectId = Convert.ToInt32(gvProjects.DataKeys[e.RowIndex].Value);
             GridViewRow row = gvProjects.Rows[e.RowIndex];
-
             string title = ((TextBox)row.Cells[0].Controls[0]).Text;
             string description = ((TextBox)row.Cells[1].Controls[0]).Text;
             string sourceCode = ((TextBox)row.Cells[2].Controls[0]).Text;
@@ -142,11 +129,9 @@ namespace My_Portfolio
             gvProjects.EditIndex = -1;
             LoadProjects();
         }
-
         protected void gvProjects_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int projectId = Convert.ToInt32(gvProjects.DataKeys[e.RowIndex].Value);
-
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 string query = "DELETE FROM Projects WHERE ProjectID=@ProjectID";
@@ -157,28 +142,16 @@ namespace My_Portfolio
                     cmd.ExecuteNonQuery();
                 }
             }
-
             LoadProjects();
         }
 
         // ---------- SERVICES ----------
-        protected void gvServices_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-            gvServices.EditIndex = e.NewEditIndex;
-            LoadServices();
-        }
-
-        protected void gvServices_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-        {
-            gvServices.EditIndex = -1;
-            LoadServices();
-        }
-
+        protected void gvServices_RowEditing(object sender, GridViewEditEventArgs e) { gvServices.EditIndex = e.NewEditIndex; LoadServices(); }
+        protected void gvServices_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { gvServices.EditIndex = -1; LoadServices(); }
         protected void gvServices_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             int serviceId = Convert.ToInt32(gvServices.DataKeys[e.RowIndex].Value);
             GridViewRow row = gvServices.Rows[e.RowIndex];
-
             string title = ((TextBox)row.Cells[0].Controls[0]).Text;
             string description = ((TextBox)row.Cells[1].Controls[0]).Text;
             string iconClass = ((TextBox)row.Cells[2].Controls[0]).Text;
@@ -200,11 +173,9 @@ namespace My_Portfolio
             gvServices.EditIndex = -1;
             LoadServices();
         }
-
         protected void gvServices_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int serviceId = Convert.ToInt32(gvServices.DataKeys[e.RowIndex].Value);
-
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 string query = "DELETE FROM Services WHERE ServiceID=@ServiceID";
@@ -215,28 +186,16 @@ namespace My_Portfolio
                     cmd.ExecuteNonQuery();
                 }
             }
-
             LoadServices();
         }
 
         // ---------- TESTIMONIALS ----------
-        protected void gvTestimonials_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-            gvTestimonials.EditIndex = e.NewEditIndex;
-            LoadTestimonials();
-        }
-
-        protected void gvTestimonials_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-        {
-            gvTestimonials.EditIndex = -1;
-            LoadTestimonials();
-        }
-
+        protected void gvTestimonials_RowEditing(object sender, GridViewEditEventArgs e) { gvTestimonials.EditIndex = e.NewEditIndex; LoadTestimonials(); }
+        protected void gvTestimonials_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { gvTestimonials.EditIndex = -1; LoadTestimonials(); }
         protected void gvTestimonials_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             int testimonialId = Convert.ToInt32(gvTestimonials.DataKeys[e.RowIndex].Value);
             GridViewRow row = gvTestimonials.Rows[e.RowIndex];
-
             string name = ((TextBox)row.Cells[0].Controls[0]).Text;
             string feedback = ((TextBox)row.Cells[1].Controls[0]).Text;
             int stars = Convert.ToInt32(((TextBox)row.Cells[2].Controls[0]).Text);
@@ -260,11 +219,9 @@ namespace My_Portfolio
             gvTestimonials.EditIndex = -1;
             LoadTestimonials();
         }
-
         protected void gvTestimonials_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int testimonialId = Convert.ToInt32(gvTestimonials.DataKeys[e.RowIndex].Value);
-
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 string query = "DELETE FROM Testimonials WHERE TestimonialID=@TestimonialID";
@@ -275,8 +232,76 @@ namespace My_Portfolio
                     cmd.ExecuteNonQuery();
                 }
             }
-
             LoadTestimonials();
+        }
+
+        // ---------- SKILLS ----------
+        protected void btnAddSkill_Click(object sender, EventArgs e)
+        {
+            string skillName = txtSkillName.Text.Trim();
+            string category = txtSkillCategory.Text.Trim();
+            if (string.IsNullOrEmpty(skillName) || string.IsNullOrEmpty(category))
+            {
+                Response.Write("<script>alert('Both fields are required.');</script>");
+                return;
+            }
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                string query = "INSERT INTO Skills (SkillName, Category) VALUES (@SkillName, @Category)";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@SkillName", skillName);
+                    cmd.Parameters.AddWithValue("@Category", category);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+            txtSkillName.Text = "";
+            txtSkillCategory.Text = "";
+            LoadSkills();
+        }
+
+        protected void gvSkills_RowEditing(object sender, GridViewEditEventArgs e) { gvSkills.EditIndex = e.NewEditIndex; LoadSkills(); }
+        protected void gvSkills_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { gvSkills.EditIndex = -1; LoadSkills(); }
+        protected void gvSkills_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            int skillId = Convert.ToInt32(gvSkills.DataKeys[e.RowIndex].Value);
+            GridViewRow row = gvSkills.Rows[e.RowIndex];
+            string skillName = ((TextBox)row.Cells[0].Controls[0]).Text;
+            string category = ((TextBox)row.Cells[1].Controls[0]).Text;
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                string query = "UPDATE Skills SET SkillName=@SkillName, Category=@Category WHERE SkillID=@SkillID";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@SkillName", skillName);
+                    cmd.Parameters.AddWithValue("@Category", category);
+                    cmd.Parameters.AddWithValue("@SkillID", skillId);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+            gvSkills.EditIndex = -1;
+            LoadSkills();
+        }
+        protected void gvSkills_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int skillId = Convert.ToInt32(gvSkills.DataKeys[e.RowIndex].Value);
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                string query = "DELETE FROM Skills WHERE SkillID=@SkillID";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@SkillID", skillId);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            LoadSkills();
         }
     }
 }

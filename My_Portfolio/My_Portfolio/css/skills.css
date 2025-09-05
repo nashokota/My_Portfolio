@@ -1,0 +1,93 @@
+﻿/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Page background */
+body {
+    background: #f4f6f8;
+    color: #333;
+    padding: 40px;
+}
+
+/* Container */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+    /* Heading */
+    .form-container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2c3e50;
+    }
+
+    /* Labels */
+    .form-container label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+        margin-top: 15px;
+        color: #34495e;
+    }
+
+    /* Textboxes */
+    .form-container input[type="text"],
+    .form-container input[type="number"] {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: border 0.2s ease;
+    }
+
+        .form-container input[type="text"]:focus,
+        .form-container input[type="number"]:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+    /* Buttons */
+    .form-container input[type="submit"],
+    .form-container input[type="button"] {
+        background: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-right: 10px;
+        transition: background 0.3s ease;
+        font-size: 14px;
+    }
+
+        .form-container input[type="submit"]:hover,
+        .form-container input[type="button"]:hover {
+            background: #2980b9;
+        }
+
+/* Cancel button */
+#btnCancel {
+    background: #e74c3c;
+}
+
+    #btnCancel:hover {
+        background: #c0392b;
+    }
+
+/* Message label */
+#lblMessage {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}

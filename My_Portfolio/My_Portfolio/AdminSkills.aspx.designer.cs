@@ -11,7 +11,7 @@ namespace My_Portfolio
 {
 
 
-    public partial class Admin
+    public partial class AdminSkills
     {
 
         /// <summary>
@@ -24,67 +24,22 @@ namespace My_Portfolio
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// btnLogout control.
+        /// btnBack control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogout;
+        protected global::System.Web.UI.WebControls.Button btnBack;
 
         /// <summary>
-        /// gvProjects control.
+        /// txtCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvProjects;
-
-        /// <summary>
-        /// btnAddProject control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddProject;
-
-        /// <summary>
-        /// gvServices control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvServices;
-
-        /// <summary>
-        /// btnAddService control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddService;
-
-        /// <summary>
-        /// gvTestimonials control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvTestimonials;
-
-        /// <summary>
-        /// btnAddTestimonial control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddTestimonial;
+        protected global::System.Web.UI.WebControls.TextBox txtCategory;
 
         /// <summary>
         /// txtSkillName control.
@@ -96,13 +51,13 @@ namespace My_Portfolio
         protected global::System.Web.UI.WebControls.TextBox txtSkillName;
 
         /// <summary>
-        /// txtSkillCategory control.
+        /// txtIcon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSkillCategory;
+        protected global::System.Web.UI.WebControls.TextBox txtIcon;
 
         /// <summary>
         /// btnAddSkill control.

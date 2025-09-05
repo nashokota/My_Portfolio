@@ -68,6 +68,28 @@
             </Columns>
         </asp:GridView>
         <asp:Button ID="btnAddTestimonial" runat="server" Text="Add New Testimonial" OnClick="btnAddTestimonial_Click" />
+
+        <hr />
+
+        <!-- SKILLS SECTION -->
+        <h2>Skills</h2>
+
+        <asp:TextBox ID="txtSkillName" runat="server" Placeholder="Skill Name"></asp:TextBox>
+        <asp:TextBox ID="txtSkillCategory" runat="server" Placeholder="Category"></asp:TextBox>
+        <asp:Button ID="btnAddSkill" runat="server" Text="Add Skill" OnClick="btnAddSkill_Click" />
+
+        <asp:GridView ID="gvSkills" runat="server" AutoGenerateColumns="False" DataKeyNames="SkillID"
+            OnRowEditing="gvSkills_RowEditing"
+            OnRowCancelingEdit="gvSkills_RowCancelingEdit"
+            OnRowUpdating="gvSkills_RowUpdating"
+            OnRowDeleting="gvSkills_RowDeleting">
+            <Columns>
+                <asp:BoundField DataField="SkillName" HeaderText="Skill Name" />
+                <asp:BoundField DataField="Category" HeaderText="Category" />
+                <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
+            </Columns>
+        </asp:GridView>
+
     </form>
 </body>
 </html>
